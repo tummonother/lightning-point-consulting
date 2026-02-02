@@ -13,10 +13,12 @@ import {
   Layers,
   Wrench,
   ShieldCheck,
-  Power,
-  Navigation,
-  RefreshCw,
-  Puzzle,
+  Settings,
+  Shield,
+  Activity,
+  Users,
+  Briefcase,
+  TrendingUp,
   ArrowRight,
 } from "lucide-react";
 import Header from "@/components/Header";
@@ -50,38 +52,42 @@ export default function Home() {
     },
   ];
 
-  const stages = [
+  const services = [
     {
-      icon: Power,
-      title: "Activate",
-      tagline: "Set the delivery engine before work accelerates.",
+      icon: Settings,
+      title: "Activation & Setup",
       description:
-        "Align outcomes, scope, governance, roles, and partner expectations so your team starts steady.",
-      href: "/services/activate",
+        "Start your program with clear scope, governance, and partner alignment. Independent guidance before implementation begins.",
     },
     {
-      icon: Navigation,
-      title: "Deliver",
-      tagline: "Customer-side execution strength during implementation.",
+      icon: Shield,
+      title: "Delivery Assurance",
       description:
-        "Strengthen the customer-side delivery engine with partner-agnostic advisory, delivery assurance, and embedded leadership.",
-      href: "/services/deliver",
+        "Keep delivery predictable with milestone reviews and sponsor-ready guidance. Your customer-side confidence layer during implementation.",
     },
     {
-      icon: RefreshCw,
-      title: "Run & Evolve",
-      tagline: "Sustained post-go-live value at a manageable pace.",
+      icon: Activity,
+      title: "Health Check & Course Correction",
       description:
-        "Stabilize, improve, and keep Workday delivering value without burning out your team.",
-      href: "/services/run-evolve",
+        "Get a clear diagnosis and credible reset plan—fast. Objective assessment when the project feels off.",
     },
     {
-      icon: Puzzle,
-      title: "Specialty Services",
-      tagline: "Focused support for complex, cross-cutting situations.",
+      icon: Users,
+      title: "Embedded Leadership",
       description:
-        "Customer-side delivery discipline for M&A, AI readiness, and ERP program management.",
-      href: "/services/specialty",
+        "Customer-side leadership that runs cadence and drives readiness. Experienced delivery leaders directly in your team.",
+    },
+    {
+      icon: Briefcase,
+      title: "Expert Bench",
+      description:
+        "Premium Workday capacity—vetted, matched, and ready. Access to our curated network of experienced consultants.",
+    },
+    {
+      icon: TrendingUp,
+      title: "Optimize & Operate",
+      description:
+        "Stabilize, optimize, and keep Workday value flowing after go-live. Sustainable improvement without burning out your team.",
     },
   ];
 
@@ -199,44 +205,35 @@ export default function Home() {
           <div className="container relative z-10">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-                Services Built Around Your Journey
+                Services Built for the Full Workday Lifecycle
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Workday programs move through distinct stages—and so do the
-                challenges. We've organized our services around the customer
-                lifecycle so you can find the right support for where you are
-                now.
+                Independent advisory and execution support across every stage of
+                your Workday journey—from pre-implementation readiness through
+                post-go-live optimization.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {stages.map((stage, index) => {
-                const Icon = stage.icon;
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {services.map((service, index) => {
+                const Icon = service.icon;
                 return (
-                  <Link key={index} href={stage.href}>
-                    <div className="bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full">
-                      <div className="flex items-start gap-4 mb-4">
-                        <div className="flex-shrink-0 w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center">
-                          <Icon className="h-7 w-7 text-primary" />
-                        </div>
-                        <div>
-                          <h3 className="text-2xl font-semibold mb-2">
-                            {stage.title}
-                          </h3>
-                          <p className="text-accent text-sm font-medium">
-                            {stage.tagline}
-                          </p>
-                        </div>
+                  <div
+                    key={index}
+                    className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full"
+                  >
+                    <div className="flex flex-col h-full">
+                      <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <Icon className="h-6 w-6 text-primary" />
                       </div>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {stage.description}
+                      <h3 className="text-lg font-semibold mb-3">
+                        {service.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {service.description}
                       </p>
-                      <div className="mt-6 flex items-center text-primary font-medium">
-                        Learn more
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </div>
                     </div>
-                  </Link>
+                  </div>
                 );
               })}
             </div>
@@ -248,6 +245,7 @@ export default function Home() {
                   className="bg-primary text-primary-foreground hover:bg-primary/90"
                 >
                   View All Services
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
             </div>
@@ -256,47 +254,92 @@ export default function Home() {
 
         {/* About Teaser */}
         <section className="py-20 bg-background relative overflow-hidden">
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-10">
+          <div className="absolute inset-0 opacity-10">
             <img
               src="/images/about-leadership.png"
               alt=""
-              className="w-[600px] h-[400px] object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl mx-auto">
-              <div className="accent-bar">
-                <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-                  Led by Delivery Experience
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                  Lightning Point Consulting is led by Jeff Tummon, a Workday
-                  delivery leader with 13+ years in the ecosystem. Former Head
-                  of Professional Services (Canada) at Workday and Certified
-                  Engagement Manager, Jeff brings clarity, discipline, and a
-                  sense of calm to complex programs.
-                </p>
-                <Link href="/about">
-                  <Button variant="outline" size="lg">
-                    Learn More About Us
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+                    Led by Someone Who's Done This Work
+                  </h2>
+                  <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                    Lightning Point Consulting is led by Jeff Tummon, former
+                    Head of Workday Professional Services (Canada), with 13+
+                    years leading Workday deployments across industries.
+                  </p>
+                  <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                    We've lived this from every angle—SI side, customer side,
+                    and as Workday project sponsors. We know what good delivery
+                    looks like because we've built it.
+                  </p>
+                  <Link href="/about">
+                    <Button
+                      variant="outline"
+                      className="border-primary text-primary hover:bg-primary/10"
+                    >
+                      Learn More About Us
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-8">
+                  <h3 className="text-xl font-semibold mb-4">Our Approach</h3>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    We believe great Workday programs are built on three
+                    principles: calm delivery rhythms, clear decision paths, and
+                    teams that own the platform long-term.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">✓</span>
+                      <span className="text-muted-foreground">
+                        Protect team capacity and build internal capability
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">✓</span>
+                      <span className="text-muted-foreground">
+                        Design for ownership, not dependency
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">✓</span>
+                      <span className="text-muted-foreground">
+                        Real delivery support, not PowerPoint consulting
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Contact CTA */}
-        <section className="py-20 bg-primary text-primary-foreground">
-          <div className="container">
+        {/* CTA Section */}
+        <section className="py-20 bg-primary text-primary-foreground relative overflow-hidden">
+          <div
+            className="absolute inset-0 opacity-10"
+            style={{
+              backgroundImage: "url(/images/contact-pattern.png)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          />
+          <div className="container relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-                Let's Talk
+                Ready to Talk About Your Project?
               </h2>
-              <p className="text-xl mb-8 text-primary-foreground/90 leading-relaxed">
-                Whether you're early in planning, mid-implementation, or
-                stabilizing post-go-live—we're happy to explore how we can help.
+              <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
+                Whether you're planning a new implementation, navigating a
+                challenging delivery, or looking to optimize post-go-live—let's
+                have a conversation about what might move the needle.
               </p>
               <Link href="/contact">
                 <Button

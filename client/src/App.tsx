@@ -6,12 +6,9 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
-import Activate from "./pages/Activate";
-import Deliver from "./pages/Deliver";
-import RunEvolve from "./pages/RunEvolve";
-import Specialty from "./pages/Specialty";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Contractors from "./pages/Contractors";
 
 
 function Router() {
@@ -19,10 +16,7 @@ function Router() {
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/services"} component={Services} />
-      <Route path={"/services/activate"} component={Activate} />
-      <Route path={"/services/deliver"} component={Deliver} />
-      <Route path={"/services/run-evolve"} component={RunEvolve} />
-      <Route path={"/services/specialty"} component={Specialty} />
+      <Route path={"/contractors"} component={Contractors} />
       <Route path={"/about"} component={About} />
       <Route path={"/contact"} component={Contact} />
       <Route path={"/404"} component={NotFound} />
