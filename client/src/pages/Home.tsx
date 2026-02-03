@@ -40,7 +40,7 @@ export default function Home() {
     },
     {
       icon: Wrench,
-      title: "Hands-On, Not Deckware",
+      title: "Hands-On, not Handed-Off",
       description:
         "We join your governance, your steering meetings, your cutover war rooms. Real delivery support, not PowerPoint consulting.",
     },
@@ -139,7 +139,7 @@ export default function Home() {
                 </li>
               </ul>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/services">
+                <a href="/services#our-services">
                   <Button
                     size="lg"
                     className="bg-accent text-accent-foreground hover:bg-accent/90 text-base"
@@ -147,7 +147,7 @@ export default function Home() {
                     Explore Services
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
-                </Link>
+                </a>
                 <Link href="/contact">
                   <Button
                     size="lg"
@@ -217,10 +217,11 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => {
                 const Icon = service.icon;
+                const serviceSlug = service.title.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
                 return (
+                  <a key={index} href={`/services#${serviceSlug}`}>
                   <div
-                    key={index}
-                    className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full"
+                    className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full cursor-pointer"
                   >
                     <div className="flex flex-col h-full">
                       <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
@@ -234,6 +235,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
+                  </a>
                 );
               })}
             </div>

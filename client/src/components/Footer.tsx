@@ -5,7 +5,7 @@
  */
 
 import { Link } from "wouter";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -58,17 +58,6 @@ export default function Footer() {
                 <Mail className="h-4 w-4" />
                 info@lightningpoint.consulting
               </a>
-              <a
-                href="tel:+16474074710"
-                className="flex items-center gap-2 hover:text-accent transition-colors"
-              >
-                <Phone className="h-4 w-4" />
-                647.407.4710
-              </a>
-              <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4" />
-                Toronto, ON
-              </div>
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ import Footer from "@/components/Footer";
 export default function Services() {
   const services = [
     {
-      id: "activation",
+      id: "activation-&-setup",
       icon: Settings,
       title: "Activation & Setup",
       promise: "Start your program with clear scope, governance, and partner alignment.",
@@ -52,7 +52,7 @@ export default function Services() {
       ],
     },
     {
-      id: "health-check",
+      id: "health-check-&-course-correction",
       icon: Activity,
       title: "Health Check & Course Correction",
       promise: "Get a clear diagnosis and a credible reset plan—fast.",
@@ -112,7 +112,7 @@ export default function Services() {
       ],
     },
     {
-      id: "optimize-operate",
+      id: "optimize-&-operate",
       icon: TrendingUp,
       title: "Optimize & Operate",
       promise: "Stabilize, optimize, and keep Workday value flowing after go-live.",
@@ -181,58 +181,8 @@ export default function Services() {
           </div>
         </section>
 
-        {/* What Sets Us Apart */}
-        <section className="py-16 bg-muted/30">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-semibold mb-8 text-center">
-                What Sets Us Apart
-              </h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Deep Workday Delivery Leadership Experience
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Many roles across the ecosystem—partner, customer, and
-                    Workday. Former Head of Workday Professional Services
-                    (Canada).
-                  </p>
-                </div>
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Independent Perspective
-                  </h3>
-                  <p className="text-muted-foreground">
-                    No SI partnerships, no vendor quotas. We work for you, not
-                    your implementation partner.
-                  </p>
-                </div>
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Flexible Engagement Models
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Fractional, project-based, or embedded. We adapt to your
-                    needs and timeline.
-                  </p>
-                </div>
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Customer-Side Focus
-                  </h3>
-                  <p className="text-muted-foreground">
-                    We strengthen your delivery engine, not replace it. Our goal
-                    is a team ready to own the platform.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Core Services */}
-        <section className="py-16 bg-background">
+        <section id="our-services" className="py-16 bg-background scroll-mt-20">
           <div className="container">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-3xl font-semibold mb-12 text-center">
@@ -344,8 +294,58 @@ export default function Services() {
           </div>
         </section>
 
-        {/* Specialty Service */}
+        {/* What Sets Us Apart */}
         <section className="py-16 bg-muted/30">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-semibold mb-8 text-center">
+                What Sets Us Apart
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-card border border-border rounded-xl p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Deep Workday Delivery Leadership Experience
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Many roles across the ecosystem—partner, customer, and
+                    Workday. Former Head of Workday Professional Services
+                    (Canada).
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Independent Perspective
+                  </h3>
+                  <p className="text-muted-foreground">
+                    No SI partnerships, no vendor quotas. We work for you, not
+                    your implementation partner.
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Flexible Engagement Models
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Fractional, project-based, or embedded. We adapt to your
+                    needs and timeline.
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Customer-Side Focus
+                  </h3>
+                  <p className="text-muted-foreground">
+                    We strengthen your delivery engine, not replace it. Our goal
+                    is a team ready to own the platform.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Specialty Service */}
+        <section className="py-16 bg-background">
           <div className="container">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-8">

@@ -16,7 +16,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { toast } from "sonner";
@@ -215,34 +215,6 @@ export default function Contact() {
                             >
                               info@lightningpoint.consulting
                             </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex items-start gap-3">
-                          <Phone className="h-5 w-5 text-accent mt-0.5" />
-                          <div>
-                            <p className="text-sm font-medium mb-1">Phone</p>
-                            <a
-                              href="tel:+16474074710"
-                              className="text-sm text-muted-foreground hover:text-accent"
-                            >
-                              647.407.4710
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="flex items-start gap-3">
-                          <MapPin className="h-5 w-5 text-accent mt-0.5" />
-                          <div>
-                            <p className="text-sm font-medium mb-1">Location</p>
-                            <p className="text-sm text-muted-foreground">
-                              Toronto, ON
-                            </p>
-                            <p className="text-xs text-muted-foreground mt-1">
-                              Serving North America
-                            </p>
                           </div>
                         </div>
                       </div>
