@@ -27,7 +27,7 @@ export default function Services() {
       title: "Activation & Setup",
       promise: "Start your program with clear scope, governance, and partner alignment.",
       description:
-        "Most Workday projects don't struggle at go-live—they struggle at kickoff. Misaligned executives, unclear success criteria, and SI contracts weighted toward the vendor set the stage for budget pressure and scope creep months later. Activation & Setup gives you independent, experienced guidance before implementation begins.",
+        "The foundation you set before implementation begins shapes everything that follows. Aligned executives, clear success criteria, and well-structured governance create the conditions for predictable delivery and strong partner collaboration. Activation & Setup gives you independent, experienced guidance to start your program on solid footing.",
       results: [
         "Documented success criteria and decision paths aligned across executives before kickoff",
         "SI contract with appropriate protections, clear deliverables, and fair risk allocation",
@@ -40,7 +40,7 @@ export default function Services() {
       title: "Delivery Assurance",
       promise: "Keep delivery predictable with milestone reviews and sponsor-ready guidance.",
       description:
-        "Your SI has incentives to keep the project moving. Your team is stretched thin. Delivery Assurance provides your customer-side confidence layer during implementation—through ongoing advisory, recurring stage-gate reviews, or both. We review SI deliverables at key milestones, coach your team through decisions and escalations, and surface readiness gaps early enough to address them.",
+        "Complex implementations benefit from independent perspective. When your team is stretched across business-as-usual and project work, experienced oversight helps ensure nothing falls through the cracks. Delivery Assurance provides your customer-side confidence layer—through ongoing advisory, recurring stage-gate reviews, or both. We review deliverables at key milestones, coach your team through decisions, and surface readiness gaps early enough to address them.",
       modes: [
         "Advisory (ongoing): Sponsor/PMO coaching, governance support, partner alignment, risk management",
         "Stage-Gate Reviews (recurring): Milestone-based reviews at plan, design, testing, and go-live readiness with findings and prioritized actions",
@@ -57,7 +57,7 @@ export default function Services() {
       title: "Health Check & Course Correction",
       promise: "Get a clear diagnosis and a credible reset plan—fast.",
       description:
-        "When confidence drops or momentum stalls, you need to know what's true and what to do next. Health Check & Course Correction is your objective assessment when the project feels off—whether that's midstream uncertainty, partner friction, or a program that's clearly stuck. Unlike milestone-based Delivery Assurance, this is an ad-hoc diagnostic triggered by need, not schedule.",
+        "When a program feels uncertain—unclear status, stalled decisions, or general loss of momentum—an independent assessment can help. Health Check & Course Correction provides objective clarity on where the program stands and what to prioritize next. This is a time-boxed diagnostic that gives sponsors evidence-based findings and a prioritized action plan.",
       includes: [
         "Health Check (diagnose): Comprehensive project assessment—scope, timeline, governance, risks, partner dynamics, team capacity",
         "Course Correction (reset): Rebaseline plan with prioritized actions, clear owners, and a restored decision rhythm",
@@ -93,7 +93,7 @@ export default function Services() {
       title: "Expert Bench",
       promise: "Premium Workday capacity—vetted, matched, and ready.",
       description:
-        "Finding good Workday talent is hard. Finding talent that actually knows what they're doing—and fits your project—is harder. Expert Bench gives you access to our curated network of experienced Workday consultants who we've vetted, worked with, and trust. This isn't staffing agency placement. We maintain semi-formal partnerships with the best independent consultants in the ecosystem.",
+        "When you need specialist capacity to complement your SI and internal team—integrations, reporting, testing, change, or PMO support—Expert Bench provides vetted practitioners under Lightning Point's quality governance. We remain accountable for fit, onboarding, and deliverable quality. This is quality-governed specialist delivery, not staffing placement.",
       includes: [
         "Functional consultants: HCM, Payroll, Financials, Compensation, Benefits, Recruiting",
         "Technical consultants: Integrations, Data Conversion, Reporting, Security",
@@ -169,13 +169,14 @@ export default function Services() {
                 Services Built for the Full Workday Lifecycle
               </h1>
               <p className="text-xl text-primary-foreground/90 leading-relaxed">
-                Workday implementations are high-stakes. Most organizations do
-                this once a decade—and the margin for error is thin. Lightning
-                Point Consulting provides independent Workday advisory and
-                execution support for enterprise HR, Finance, and IT leaders. We
-                sit on the customer side of the table—not the SI's, not the
-                vendor's—to help you go live on time, on budget, and with a
-                team ready to own the platform long-term.
+                Workday implementations are complex, high-stakes programs. Success
+                depends on clear governance, strong decision-making, and having
+                the right expertise at the right moments. Lightning Point provides
+                independent, partner-aligned advisory and delivery leadership for
+                enterprise Workday programs. We work alongside your team and your
+                implementation partner to strengthen governance, accelerate decisions,
+                and build the internal capability your organization needs to own the
+                platform long-term.
               </p>
             </div>
           </div>
@@ -294,56 +295,6 @@ export default function Services() {
           </div>
         </section>
 
-        {/* What Sets Us Apart */}
-        <section className="py-16 bg-muted/30">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-semibold mb-8 text-center">
-                What Sets Us Apart
-              </h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Deep Workday Delivery Leadership Experience
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Many roles across the ecosystem—partner, customer, and
-                    Workday. Former Head of Workday Professional Services
-                    (Canada).
-                  </p>
-                </div>
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Independent Perspective
-                  </h3>
-                  <p className="text-muted-foreground">
-                    No SI partnerships, no vendor quotas. We work for you, not
-                    your implementation partner.
-                  </p>
-                </div>
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Flexible Engagement Models
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Fractional, project-based, or embedded. We adapt to your
-                    needs and timeline.
-                  </p>
-                </div>
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Customer-Side Focus
-                  </h3>
-                  <p className="text-muted-foreground">
-                    We strengthen your delivery engine, not replace it. Our goal
-                    is a team ready to own the platform.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Specialty Service */}
         <section className="py-16 bg-background">
           <div className="container">
@@ -408,9 +359,60 @@ export default function Services() {
                   size="lg"
                   className="bg-accent text-accent-foreground hover:bg-accent/90"
                 >
-                  Start a Conversation
+                  Book a Discovery Call
                 </Button>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* What Sets Us Apart */}
+        <section className="py-16 bg-muted/30">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-semibold mb-8 text-center">
+                What Sets Us Apart
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-card border border-border rounded-xl p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Deep Workday Delivery Leadership Experience
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Many roles across the ecosystem—partner, customer, and
+                    Workday. Former Head of Workday Professional Services
+                    (Canada).
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Independent & Partner-Aligned
+                  </h3>
+                  <p className="text-muted-foreground">
+                    No SI partnerships, no vendor quotas. We bring independent
+                    expertise that strengthens your partner relationship and
+                    improves outcomes for everyone.
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Flexible Engagement Models
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Fractional, project-based, or embedded. We adapt to your
+                    needs and timeline.
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Customer-Side Focus
+                  </h3>
+                  <p className="text-muted-foreground">
+                    We strengthen your delivery engine, not replace it. Our goal
+                    is a team ready to own the platform.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
