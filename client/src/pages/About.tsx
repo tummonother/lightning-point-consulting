@@ -28,7 +28,7 @@ export default function About() {
           <div className="container relative z-10">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-semibold mb-6">
-                Delivery Experience, <span className="text-accent">On Your Side</span>
+                13 Years of Workday Delivery Leadership
               </h1>
             </div>
           </div>
@@ -49,17 +49,18 @@ export default function About() {
                 <h2 className="text-3xl font-semibold mb-6">Who We Are</h2>
                 <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                   <p>
-                    Lightning Point Consulting provides customer-side,
-                    partner-agnostic advisory and delivery support for Workday
-                    programs and ERP initiatives. We help HR, Finance, and IT
-                    leaders cut through delivery noise and deliver programs with
-                    more confidence, less stress, and stronger long-term
-                    ownership of the platform.
+                    I started Lightning Point because I saw an opportunity to help
+                    organizations navigate Workday implementations with experienced,
+                    independent support. After 13 years at Workday—including leading
+                    Professional Services in Canada—I've seen what makes implementations
+                    succeed: clear governance, strong decisions, and teams built for
+                    long-term ownership.
                   </p>
                   <p>
-                    We sit on the customer side of the table—not as a system
-                    integrator, not as a software vendor—but as a trusted
-                    advisor and embedded member of your team.
+                    Lightning Point brings that experience to your program. We work
+                    alongside your team and your implementation partner to provide
+                    the senior expertise and independent perspective that complex
+                    programs need—strengthening partnerships, not competing with them.
                   </p>
                 </div>
               </div>
@@ -179,7 +180,7 @@ export default function About() {
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-accent">•</span>
-                          Experience rescuing troubled programs
+                          Experience leading program recovery and course correction
                         </li>
                       </ul>
                     </div>
@@ -204,7 +205,7 @@ export default function About() {
                   size="lg"
                   className="bg-accent text-accent-foreground hover:bg-accent/90"
                 >
-                  Start a Conversation
+                  Book a Discovery Call
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>

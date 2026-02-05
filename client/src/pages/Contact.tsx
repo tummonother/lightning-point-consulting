@@ -59,7 +59,7 @@ export default function Contact() {
           <div className="container">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-semibold mb-6">
-                Start a Conversation
+                Let's See If We Can Help
               </h1>
               <p className="text-xl leading-relaxed text-primary-foreground/90">
                 Whether you're early in planning, mid-implementation, or
@@ -67,6 +67,13 @@ export default function Contact() {
                 help. No pressure, no pitch deck. Just a conversation about
                 where you are and what might move the needle.
               </p>
+              <div className="mt-4 p-4 bg-primary-foreground/10 rounded-lg">
+                <p className="text-base text-primary-foreground/80">
+                  <strong>What to expect:</strong> We respond within one business day.
+                  First call is a 20-30 minute working session to understand your
+                  situation and explore whether there's a fit.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -161,7 +168,7 @@ export default function Contact() {
 
                     <div>
                       <Label htmlFor="message">
-                        How can we help? <span className="text-destructive">*</span>
+                        What's prompting this conversation? <span className="text-destructive">*</span>
                       </Label>
                       <Textarea
                         id="message"
@@ -180,7 +187,7 @@ export default function Contact() {
                       size="lg"
                       className="w-full md:w-auto bg-accent text-accent-foreground hover:bg-accent/90"
                     >
-                      Send Message
+                      Request a Call
                     </Button>
                   </form>
 
@@ -193,6 +200,14 @@ export default function Contact() {
                       >
                         Reach us directly at info@lightningpoint.consulting
                       </a>
+                    </p>
+                  </div>
+                  <div className="mt-6 p-4 bg-muted/50 rounded-lg">
+                    <p className="text-sm text-muted-foreground">
+                      Lightning Point is led by Jeff Tummon, former Head of Workday
+                      Professional Services (Canada) with 13+ years of delivery
+                      leadership across healthcare, financial services, public sector,
+                      and commercial organizations.
                     </p>
                   </div>
                 </div>
