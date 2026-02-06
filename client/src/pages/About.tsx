@@ -28,7 +28,7 @@ export default function About() {
           <div className="container relative z-10">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-semibold mb-6">
-                13 Years of Workday Delivery Leadership
+                About Lightning Point
               </h1>
             </div>
           </div>
@@ -72,52 +72,22 @@ export default function About() {
         <section className="py-16 bg-muted/30">
           <div className="container">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-semibold mb-8 text-center">
-                Our Approach
+              <h2 className="text-3xl font-semibold mb-8 text-center" style={{color: '#fac547'}}>
+                People-First Projects
               </h2>
               <div className="bg-card border border-border rounded-xl p-8 md:p-12">
-                <h3 className="text-2xl font-semibold mb-6 text-accent">
-                  People-First Projects
+                <h3 className="text-base font-bold mb-6" style={{color: '#000000'}}>
+                  Your Workday deployment should transformational, not technical
                 </h3>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    At current ERP software maturity levels, the real
-                    differentiator is how well implementations serve people. We
-                    focus on three dimensions:
+                    Core processes and requirements are table stakes. The real differentiators are the people factors: decision-making, capacity, change, enablement, and adoption.
                   </p>
-                  <ul className="space-y-3 ml-6">
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>
-                        <strong className="text-foreground">
-                          Systems that are delightful and easy to use
-                        </strong>{" "}
-                        — Technology should serve people, not frustrate them.
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>
-                        <strong className="text-foreground">
-                          Empowered decision-makers who understand business needs
-                        </strong>{" "}
-                        — Internal teams must own the platform long-term.
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent mt-1">•</span>
-                      <span>
-                        <strong className="text-foreground">
-                          Respect for people's capacity to avoid burnout
-                        </strong>{" "}
-                        — Sustainable delivery protects your team.
-                      </span>
-                    </li>
-                  </ul>
-                  <p className="pt-4">
-                    Great systems need people who can sustain them. We protect
-                    team capacity, build internal capability, and design for
-                    ownership—not dependency.
+                  <p>
+                    Lightning Point supports Workday customers with people-first delivery by helping teams make better decisions, protecting capacity, and driving adoption. We ensure you and your partners have the right people at the table, at the right times.
+                  </p>
+                  <p>
+                    The goal: clarity in decisions, respect for capacity, and a system that's genuinely easier to use.
                   </p>
                 </div>
               </div>
